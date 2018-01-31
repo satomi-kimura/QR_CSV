@@ -9,8 +9,12 @@
 
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="384dp"
-            android:layout_height="397dp">
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="397dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
                 <ListView
                     android:id="@+id/listView"
@@ -24,9 +28,12 @@
         </android.support.constraint.ConstraintLayout>
 
         <android.support.constraint.ConstraintLayout
-            android:layout_width="384dp"
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
             android:layout_height="121dp"
-            tools:layout_editor_absoluteY="390dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
                 <LinearLayout
                     android:id="@+id/linearLayout4"
@@ -43,11 +50,13 @@
                     app:layout_constraintVertical_bias="0.0">
 
                         <Button
-                            android:id="@+id/button"
+                            android:id="@+id/button_save"
                             android:layout_width="115dp"
                             android:layout_height="92dp"
                             android:layout_weight="1"
-                            android:text="@string/Scan"
+                            android:background="@color/colorPrimary"
+                            android:text="@string/Save"
+                            android:textColor="@color/zxing_status_text"
                             android:textSize="30sp"
                             tools:layout_editor_absoluteX="16dp"
                             tools:layout_editor_absoluteY="403dp" />
@@ -64,11 +73,13 @@
                     app:layout_constraintTop_toTopOf="@+id/linearLayout4">
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/buttom_scan"
                             android:layout_width="115dp"
                             android:layout_height="92dp"
                             android:layout_weight="1"
+                            android:background="@color/colorAccent"
                             android:text="@string/Scan"
+                            android:textColor="@color/zxing_status_text"
                             android:textSize="30sp"
                             tools:layout_editor_absoluteX="135dp"
                             tools:layout_editor_absoluteY="403dp" />
@@ -78,18 +89,19 @@
                     android:id="@+id/linearLayout6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="3dp"
+                    android:layout_marginEnd="8dp"
                     android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/linearLayout5"
                     app:layout_constraintTop_toTopOf="parent">
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/button_export"
                             android:layout_width="115dp"
                             android:layout_height="92dp"
-                            android:layout_weight="1"
-                            android:text="@string/Scan"
+                            android:background="@color/zxing_custom_viewfinder_laser"
+                            android:text="@string/Export"
+                            android:textColor="@color/zxing_status_text"
                             android:textSize="30sp"
                             tools:layout_editor_absoluteX="253dp"
                             tools:layout_editor_absoluteY="403dp" />
