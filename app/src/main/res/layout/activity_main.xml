@@ -8,105 +8,97 @@
     tools:layout_editor_absoluteY="81dp">
 
 
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout"
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0dp"
+        android:layout_height="511dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+            android:id="@+id/listView"
             android:layout_width="0dp"
-            android:layout_height="397dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-                <ListView
-                    android:id="@+id/listView"
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
 
-        </android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="0dp"
-            android:layout_height="121dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-                <LinearLayout
-                    android:id="@+id/linearLayout4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
-                    app:layout_constraintHorizontal_bias="0.059"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0">
+            <Button
+                android:id="@+id/button_read"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="Read"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="403dp" />
 
-                        <Button
-                            android:id="@+id/button_save"
-                            android:layout_width="115dp"
-                            android:layout_height="92dp"
-                            android:layout_weight="1"
-                            android:background="@color/colorPrimary"
-                            android:text="@string/Save"
-                            android:textColor="@color/zxing_status_text"
-                            android:textSize="30sp"
-                            tools:layout_editor_absoluteX="16dp"
-                            tools:layout_editor_absoluteY="403dp" />
-                </LinearLayout>
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:text="Clear"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="253dp"
+                tools:layout_editor_absoluteY="403dp" />
 
-                <LinearLayout
-                    android:id="@+id/linearLayout5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
-                    app:layout_constraintStart_toEndOf="@+id/linearLayout4"
-                    app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+            <Button
+                android:id="@+id/button_export"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/zxing_custom_viewfinder_laser"
+                android:text="@string/Export"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="253dp"
+                tools:layout_editor_absoluteY="403dp" />
 
-                        <Button
-                            android:id="@+id/buttom_scan"
-                            android:layout_width="115dp"
-                            android:layout_height="92dp"
-                            android:layout_weight="1"
-                            android:background="@color/colorAccent"
-                            android:text="@string/Scan"
-                            android:textColor="@color/zxing_status_text"
-                            android:textSize="30sp"
-                            tools:layout_editor_absoluteX="135dp"
-                            tools:layout_editor_absoluteY="403dp" />
-                </LinearLayout>
+            <Button
+                android:id="@+id/buttom_scan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:text="@string/Scan"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="135dp"
+                tools:layout_editor_absoluteY="403dp" />
 
-                <LinearLayout
-                    android:id="@+id/linearLayout6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="horizontal"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/linearLayout5"
-                    app:layout_constraintTop_toTopOf="parent">
+        </LinearLayout>
 
-                        <Button
-                            android:id="@+id/button_export"
-                            android:layout_width="115dp"
-                            android:layout_height="92dp"
-                            android:background="@color/zxing_custom_viewfinder_laser"
-                            android:text="@string/Export"
-                            android:textColor="@color/zxing_status_text"
-                            android:textSize="30sp"
-                            tools:layout_editor_absoluteX="253dp"
-                            tools:layout_editor_absoluteY="403dp" />
-                </LinearLayout>
 
-        </android.support.constraint.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>

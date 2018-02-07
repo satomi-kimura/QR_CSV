@@ -49,6 +49,7 @@ public class CsvAdapter extends ArrayAdapter<Content> {
         return view;
     }
 
+
     private static class ViewHolder {
         TextView[] content = new TextView[10];
     }
