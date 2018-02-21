@@ -7,11 +7,11 @@
     tools:context="com.example.nttr.csvtest.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
-
     <android.support.constraint.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="0dp"
-        android:layout_height="511dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -42,11 +42,26 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
+
+            <Button
+                android:id="@+id/button_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_blue_dark"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp"
+                android:text="Clear"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="253dp"
+                tools:layout_editor_absoluteY="403dp" />
 
             <Button
                 android:id="@+id/button_read"
@@ -58,18 +73,6 @@
                 android:textColor="@color/zxing_status_text"
                 android:textSize="20sp"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="403dp" />
-
-            <Button
-                android:id="@+id/button_clear"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@android:color/holo_blue_dark"
-                android:text="Clear"
-                android:textColor="@color/zxing_status_text"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="253dp"
                 tools:layout_editor_absoluteY="403dp" />
 
             <Button
