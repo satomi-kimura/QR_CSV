@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">csvtest</string>
+    <string name="app_name">QSV</string>
     <string name="Scan">Scan</string>
     <string name="Export">Export</string>
     <string name="Save">Save</string>

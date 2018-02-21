@@ -1,4 +1,4 @@
-package com.example.nttr.csvtest;
+package com.qsv.nttr.csvtest;
 
 import org.junit.Test;
 

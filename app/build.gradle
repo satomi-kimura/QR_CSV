@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.example.nttr.csvtest"
+        applicationId "com.qsv.nttr.csvtest"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
@@ -16,6 +16,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
@@ -28,4 +29,7 @@ dependencies {
 
     implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
     compile 'com.android.support:appcompat-v7:26.1.0'
+    //implementation 'uk.co.samuelwall:material-tap-target-prompt:2.6.1'
+    compile 'com.github.amlcurran.showcaseview:library:5.4.3'
+
 }

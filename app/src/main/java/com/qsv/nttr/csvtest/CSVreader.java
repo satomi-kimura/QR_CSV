@@ -1,4 +1,4 @@
-package com.example.nttr.csvtest;
+package com.qsv.nttr.csvtest;
 
 import android.os.Environment;
 import android.util.Log;
@@ -25,9 +25,9 @@ public class CSVreader {
         String line;
 
         try {
-            Log.d("Read!!!!!!", dir+"/test.csv");
+            Log.d("Read!!!!!!", dir+"/QRcsv.csv");
             reader = new BufferedReader(new InputStreamReader(new FileInputStream(
-                    dir+"/test.csv"), "utf-8"));
+                    dir+"/QRcsv.csv"), "utf-8"));
 
             // 出力ファイルの作成
             try {
